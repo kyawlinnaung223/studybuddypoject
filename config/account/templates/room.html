@@ -1,0 +1,55 @@
+
+{% block content %}
+<style>
+          .room-container{
+                    display: grid;
+                    grid-template-columns: 3fr 1fr;
+          }
+</style>
+
+<div class="room-container">
+          <div>
+<h1 class="create">{{room.name}}</h1>
+<p class="create">{{room.description}}</p>
+<div class="commit-wrapper">
+          <h3 class="create">Conversation</h3>
+          
+          <hr>
+          
+          {% for message in messages %}
+          <div>
+                    <a href="{% url 'delete_message' message.id %">delete</a>
+                    <small class="create">@{{message.user}}
+                              {{message.Created|timesince}} ago</small><br>
+                    <p class="create">{{message.body}}</p>
+                -->
+                    <hr>
+          </div>
+          {% endfor %}
+
+</div>
+<!-- this is comment form -->
+{% if request.user.is_authenticated %}
+<div class="comment-form">
+          <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="body" placeholder="Write your messages here..">
+          </form>
+</div>
+</div>
+<!-- start participants -->
+<div class="participatians">
+          <h3>Participants</h3>
+          <hr>
+          {% for user in participants %}
+          <div>
+                    <p>@{{user.username}}</p>
+          </div>
+          {% endfor %}
+         
+</div>
+<!-- end participants -->
+</div>
+{% endif %}
+<!-- end comment form -->
+{% endblock content %}

@@ -1,0 +1,120 @@
+body{
+          background-color: #2c2d38;
+          font-family: 'Poppins', sans-serif;
+      }
+      .navbar{
+          background-color: #3f4155 !important;
+          padding-top: 13px;
+          padding-bottom: 13px;
+      }
+      .font-color{
+          color: #eee;
+      }
+      .search{
+          background-color: #51536e;
+          border: 1px solid #51536e;
+          padding-right: 100px;
+          border-radius: 3px;
+      }
+      .dropdown-menu{
+          margin-left: -130px;
+      }
+      .dropdown-toggle{
+          margin-top: 5px;
+          color: #7a7e88 !important;
+      }
+      .mail{
+          font-size: 12px;
+          color: #71c6de;
+      }
+      .name{
+          font-size: 15px;
+          color: #7a7e88;
+          font-weight: bold;
+          letter-spacing: 0.3px;
+      }
+      .man-logo{
+          border-radius: 100%;
+          border: 3px solid #71c6de;
+      }
+      
+      .list-header{
+          color: #51536e;
+          font-size: 17px;
+      }
+      .dflex{
+          display: flex;
+      }
+      .list{
+          justify-content: space-between;
+      }
+      .active-list{
+          color: #71c6de;
+      }
+      .lists{
+          padding-top: 2px;
+          padding-bottom: 2px;
+      }
+      .list-number{
+          background-color: #51536e;
+          padding-left: 9px;
+          padding-right: 9px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          border-radius: 4px;
+          border: 1px solid transparent;
+      }
+      .body-header{
+          font-style: bold;
+          font-size: 17px;
+      }
+      .body-second-header{
+          margin-top: -17px !important;
+          color: #51536e;
+          font-size: 15px;
+      }
+      .align-item{
+          align-items: center;
+      }
+      .justify{
+          justify-content: space-between;
+      }
+      .mybtn{
+          background-color: #71c6de;
+          border: 1px solid #71c6de;
+      }
+      .small-font{
+          font-size: 15px;
+      }
+      .my-bg{
+          background-color: #51536e;
+      }
+      .more-smaller{
+          font-size: 13px;
+      }
+      .gray{
+          color: #aeaeae;
+      }
+      .bg-light-gray{
+          background-color: #797b9d;
+      }
+      .band{
+          padding-left: 7px;
+          padding-right: 7px;
+          padding-top: 3px;
+          padding-bottom: 2px;
+      }
+      .my-band{
+          padding-top: 3px;
+          padding-bottom: 2px;
+      }
+
+/* new */
+.create{
+          text-decoration: none;
+          color: #71c6de;
+}
+/* end new */
+.helloworld{
+    color: white;
+}

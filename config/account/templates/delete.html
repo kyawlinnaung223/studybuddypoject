@@ -1,0 +1,11 @@
+{% extends 'navar.html' %}
+{% block content %}
+<div>
+          <form action="" method="POST">
+                    {% csrf_token %}
+                    <p style="color: white">Are you sure want to delete{{room}}?</p>
+                    <a href="{% url 'home' %}">Go Back</a>
+                    <input type="submit" Value="delete">
+          </form>
+</div>
+{% endblock content %}

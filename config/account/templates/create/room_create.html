@@ -1,0 +1,32 @@
+{% extends 'login.html'%}
+
+
+{% block content %}
+
+<div style="color:white">
+          <h1 style="text-align:center;">This is room_createpage</h1>
+          
+          <form action="" method="POST">
+                    {% csrf_token %}
+                   
+                  
+                    <div class="forms">
+                              <h2>ROOM_CREATE</h2>
+                              <input type="text" name="firstname" placeholder="Enter First Name">
+                              <input type="text" name="lastname" placeholder="Enter Last Name">
+                              <input type="email" name="email" placeholder="Enter Email Here">
+                              <input type="password" name="password" placeholder="Enter password Here">
+                              <input type="password" name="confirmpassword" placeholder="Enter Confirmpassword Here">
+                             
+                              <button class="btnn"><a href="#">login</a></button>
+                              <p class="link">Already have an account?<br>
+                              <a href="{% url 'login_page' %}">Login</a> here 
+                              <p class="liw">Login with</p>
+                      </div>
+                      
+                   
+          </form>
+          
+</div>
+
+{% endblock content %}
